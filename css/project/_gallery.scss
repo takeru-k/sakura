@@ -1,0 +1,23 @@
+.p-gallery{
+  figure{
+    &:not(:last-child){
+      margin-bottom: 24px;
+    }
+  }
+
+  figcaption{
+    text-align: center;
+  }
+}
+
+@include mq('md'){
+  .p-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    figure{
+      width: 32%
+    }
+  }
+}

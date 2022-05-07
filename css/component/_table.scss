@@ -1,0 +1,128 @@
+@media not all and (min-width: 768px){
+  .table{
+
+    
+
+    th{
+      display: block;
+      padding-top: 16px;
+      
+    }
+
+    td{
+      display: block;
+      padding-bottom: 8px;
+
+      li:first-child{
+        padding-bottom: 10px;
+      }
+    }
+  }
+} 
+
+.table{
+  
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+
+  tr{
+      border-bottom: 1px solid #eaeaea;
+
+      &:first-child{
+        border-top: 1px solid #eaeaea;
+      }
+      }
+
+  @include mq('lg'){
+    margin-top: 24px;
+  }
+
+  th{
+    text-align: left;
+    width: 150px;
+
+    @include mq('lg'){
+      padding: 24px;
+    }
+  }
+
+  td{
+    @include mq('lg'){
+      padding: 24px;
+    }
+  }
+
+}
+
+
+
+/*================================
+	表組、横スクロールあり
+=================================*/
+.table__scroll{
+  overflow-x: auto;
+  max-width: 100%;
+
+  table{
+    min-width: 580px;
+    border-bottom: 1px solid #e5e5e5;;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr{
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  th{
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    min-width: 140px;
+    font-weight: normal;
+    padding: 20px;
+    font-size: 0.9rem;
+    background: $color-accent;
+  }
+
+  td{
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    min-width: 100px;
+    padding: 20px;
+  }
+}
+
+
+.table__title{
+  background: #adad96 !important;
+}
+
+.c-table__note{
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  p{
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+}
+
+dl{
+  margin-bottom: 12px;
+}
+
+dt{
+  font-weight: 700;
+}
+
+
+ol + ol{
+  margin-top: 24px;
+}

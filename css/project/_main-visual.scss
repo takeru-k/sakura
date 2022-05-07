@@ -1,0 +1,47 @@
+.p-main-visual{
+  height: 100vh;
+  max-height: 640px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/top/mv-sp.jpg) no-repeat center center/cover;
+
+  @include mq('md'){
+    background: url(../images/top/mv.jpeg) no-repeat center center/cover;
+  }
+
+
+  @include mq('lg'){
+    height: 80vh;
+  }
+}
+
+.p-main-visual__text{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.p-main-visual__title{
+  line-height: 1.2;
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 1px 1px 4px #fff;
+
+  @include mq('lg'){
+    font-size: 32px;
+
+    br{
+      display: none;
+    }
+  }
+}
+
+.p-main-visual__detail{
+  padding-top: 16px;
+  text-transform: uppercase;
+  color: $color-main;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .1em;
+}

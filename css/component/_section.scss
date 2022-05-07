@@ -1,0 +1,29 @@
+.c-section{
+  padding: 56px 0;
+
+  @include mq('lg'){
+    padding: 72px 0;
+  }
+}
+
+.c-section__bg{
+  padding: 56px 0;
+  background: $color-sub;
+}
+
+.c-section__title{
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 24px;
+
+  span{
+    font-size: 32px;
+    color: $color-main;
+    font-weight: bold;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,31 @@
+.c-button{
+  border: solid 1px $color-main;
+  color: $color-main;
+  text-align: center;
+  line-height: 3em;
+  display: inline-block;
+  width: 80%;
+  max-width: 380px;
+  position: relative;
+
+  &:after{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: $color-main;
+    width: 43px;
+    right: -15px;
+    height: 1px;
+    top: 50%;
+  }
+}
+
+.c-button__area{
+  margin: 24px auto 24px;
+  text-align: center;
+
+  @include mq('lg'){
+    text-align: left;
+    margin-top: 40px;
+  }
+}

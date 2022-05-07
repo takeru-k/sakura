@@ -1,0 +1,27 @@
+.p-feature{
+  margin-top: 24px;
+}
+
+.p-feature__item{
+  margin-bottom: 32px;
+}
+
+@include mq('md'){
+  .p-feature{
+    margin-top: 32px;
+  }
+
+  .p-feature__item{
+    margin-bottom: 48px;
+  }
+}
+
+@include mq('lg'){
+  .p-feature{
+    margin-top: 48px;
+  }
+
+  .p-feature__item{
+    margin-bottom: 48px;
+  }
+}

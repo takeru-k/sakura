@@ -1,0 +1,59 @@
+.c-flex__title{
+  span{
+    font-size: 32px;
+    color: $color-main;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  h2{
+    font-size: 1.2em;
+  }
+}
+
+.c-flex__text{
+  margin-top: 16px;
+
+  p{
+    margin-bottom: 12px;
+    text-align: justify;
+  }
+}
+
+.c-flex__heading{
+  span{
+    font-size: 24px;
+    color: $color-main;
+    font-weight: bold;
+    border-bottom: 2px solid $color-main;
+    display: inline-block;
+    line-height: 1.2;
+  }
+
+  h3{
+    font-size: 18px;
+    margin-top: 8px;
+  }
+}
+
+@include mq('md'){
+  .c-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .c-flex__item{
+    width: 48%;
+
+    img{
+      height: 480px;
+    }
+  }
+
+  .-reverse{
+    flex-direction: row-reverse;
+  }
+}
