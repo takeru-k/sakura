@@ -178,6 +178,8 @@
   transition: 0.4s ease-out;
 }
 
-.current-menu-item{
-	color: $color-main;
+@include mq('lg'){
+	.current-menu-item{
+		color: $color-main;
+	}
 }

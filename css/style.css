@@ -369,8 +369,10 @@ img {
   transition: 0.4s ease-out;
 }
 
-.current-menu-item {
-  color: #FF7807;
+@media (min-width: 1024px) {
+  .current-menu-item {
+    color: #FF7807;
+  }
 }
 
 .footer {
