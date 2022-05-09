@@ -27,7 +27,8 @@
   line-height: 1.2;
   text-align: center;
   font-size: 24px;
-  text-shadow: 1px 1px 4px #fff;
+  text-shadow: 1px 1px 4px #999;
+  color: #fff;
 
   @include mq('lg'){
     font-size: 32px;

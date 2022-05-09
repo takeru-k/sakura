@@ -1,7 +1,7 @@
 .footer{
   background: #212a37;;
   color: #fff;
-  padding: 32px 0 16px;
+  padding: 56px 0 16px;
 
   @include mq('md'){
     padding-top: 80px;
@@ -29,6 +29,11 @@
   width: 240px;
   font-weight: normal;
 
+  a{
+    margin-bottom: 16px;
+    display: block;
+  }
+
   span{
     font-size: 14px;
     display: block;
@@ -48,14 +53,28 @@
 
 .footer__menu{
   padding-top: 24px;
-  font-size: 0.9rem;
+  text-transform: uppercase;
+
 
   @include mq('md'){
     padding-top: 0;
   }
   
   li{
-    padding-bottom: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 16px;
+
+    &:before{
+      position: absolute;
+      content: '';
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 8px;
+      height: 1px;
+      background: #fff;
+    }
   }
 
   @include mq('md'){
@@ -81,7 +100,7 @@
   padding-top: 32px;
   text-align: center;
   font-size: 0.9rem;
-  color: #666;
+  color: #f1f1f1;
   a{
     text-decoration: none;
   }

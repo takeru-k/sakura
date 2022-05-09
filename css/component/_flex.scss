@@ -6,6 +6,16 @@
     font-family: 'Poppins', sans-serif;
     letter-spacing: .1em;
     text-transform: uppercase;
+    position: relative;
+
+    &:before{
+      position: absolute;
+      width: 40px;
+      content: '';
+      height: 3px;
+      background: $color-main;
+      top: -16px;
+    }
   }
 
   h2{
@@ -49,11 +59,19 @@
     width: 48%;
 
     img{
-      height: 480px;
+      height: 560px;
     }
   }
 
   .-reverse{
     flex-direction: row-reverse;
+  }
+
+  .c-flex__text{
+    width: 88%;
+  }
+
+  .-textArea{
+    width: 45%;
   }
 }

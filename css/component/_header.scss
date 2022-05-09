@@ -24,6 +24,11 @@
 	top: 50%;
   left: 3%;
   transform: translateY(-50%);
+	z-index: 1000;
+
+	a{
+		position: relative;
+	}
 }
 
 /* ハンバーガーメニュー */
@@ -171,4 +176,8 @@
 .header.headerColorScroll {
   background: #000;
   transition: 0.4s ease-out;
+}
+
+.current-menu-item{
+	color: $color-main;
 }
